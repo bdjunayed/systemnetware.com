@@ -1,0 +1,25 @@
+{
+  "name": "system-netware",
+  "description": "This the first line.",
+  "main": "index.html",
+  "authors": [
+    "M J Chowdhury"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "computer",
+    "software"
+  ],
+  "homepage": "https://github.com/bdjunayed/system-netware",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "^2.2.12"
+  }
+}

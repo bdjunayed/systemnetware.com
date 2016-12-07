@@ -1,0 +1,14 @@
+name: System Netware
+description: System Netware template.
+#paginate: 10
+#baseurl: ‘/name-Jekyll-website’
+baseurl: './'
+exclude: ["node_modules", 
+          "gulpfile.js", 
+          "package.json", 
+          "bower_components",
+          "bower.json",
+          "README.md"]
+#markdown: redcarpet
+#highlighter: pygments # or rouge or null
+#disqus_shortname: 'your-shortname' # ignore this if not using Disqus
