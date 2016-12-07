@@ -7,11 +7,11 @@ $susy: (
   output: float, // float | isolate
   math: fluid, // fluid | static (requires column-width)
   column-width: false, // false | value
-  container: 700px, // length or % | auto
+  container: 1366px, // length or % | auto
   container-position: center, // left | center | right | <length> [*2] (grid padding)
   last-flow: to, //from | to
   columns: 12,
-  gutters: 1/2,
+  gutters: 1/4,
   gutter-position: after, // before | after | split | inside | inside-static (requires column-width)
   global-box-sizing: content-box, // content-box | border-box (affects inside/inside-static)
   debug: (
@@ -42,15 +42,15 @@ $golden_layout: layout( (1 1.618 2.618) .1 fluid float split);
   box-sizing: border-box;
  }
 
- img {
+img {
   width: 100%;
   height: auto;
- }
- ul, li {
+}
+ul, li {
   list-style: none;
   margin: 0;
   padding: 0;
- }
+}
 
 nav {
   margin: 10px 0;
@@ -66,28 +66,60 @@ nav {
   }
 }
 
-
-
+.debug {
+  border: 1px dashed red;
+  //background-color: #EFE; //OR
+}
 
 .page {
   @include container;
 }
+
 header {
   @include full;
+  // .. Mobile styles for the layout here 
   .logo {
-    @include span(3);
+    @include span(2);
+    // img {
+    //   @include span(100%);
+    // }
   }
   .company-name {
-    @include span(last 7);
-    color: #eee
+    @include span(12);    
   }
-
+  .company-slogan {
+    @include span(12);
+  }  
   nav {
     @include full;
   }
   .nav-item {
-    @include span(3 of $nav_layout);
+    @include span(4 of $nav_layout);
   }
+
+  // .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
+  @include susy-media(21em 48em) {
+    .logo {
+      @include span(2);
+    }
+    .company-name {
+      @include span(last 10);
+    }    
+  }
+
+  // .. Desktop Layout Pattern
+  @include susy-media(min-width 48em) {
+    .logo {
+      @include span(3);
+    }
+    .company-name {
+      @include span(last 9);
+    }    
+  }
+
+
+
+
 }
 
 .hero {
@@ -107,10 +139,10 @@ header {
   .in-the-media {
     @include span(7 of 7) {
       img {
-      @include span(2 );
+        @include span(2 );
       }
       .copy {
-        @include span(last 7);
+        @include span(last 5);
       }
     }
 
