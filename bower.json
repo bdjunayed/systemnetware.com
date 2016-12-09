@@ -6,20 +6,17 @@
     "M J Chowdhury"
   ],
   "license": "ISC",
-  "keywords": [
-    "computer",
-    "software"
-  ],
   "homepage": "https://github.com/bdjunayed/system-netware",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
+    // "bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "normalize-scss": "^3.0.3",
     "susy": "^2.2.12"
   }
 }

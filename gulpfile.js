@@ -41,7 +41,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     console.log('Entering browser-sync task')
     browserSync.init({
         server: {
-            baseDir: '_site'
+            baseDir: '_site'            
         }
     });
 });
@@ -89,7 +89,7 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 // not enabled in task section
 gulp.task('scripts', function() {
-  gulp.src('src/*.js')
+  gulp.src('_js/*.js')
   .pipe(concat('all.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('._site/assets/js/'));

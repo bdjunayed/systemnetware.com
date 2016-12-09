@@ -6,7 +6,7 @@ baseurl: './'
 exclude: ["node_modules", 
           "gulpfile.js", 
           "package.json", 
-          "bower_components",
+          # "bower_components",
           "bower.json",
           "README.md"]
 #markdown: redcarpet
