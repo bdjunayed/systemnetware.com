@@ -349,9 +349,9 @@ $colHover       : $color-secondary-400;
 // layout work
 .contents {
   h1 { text-shadow: 1px 2px 2px $color-gray-700-dark; }
-  // .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
+  // .. Tablet Layout Pattern   
   @include susy-media($tablet-a $tablet-b) {
-    @include span(3 of 4);
+    @include span(8 of 12);
   }
   // .. Desktop Layout Pattern
   @include susy-media(min-width $desktop-a) {
@@ -365,9 +365,7 @@ $colHover       : $color-secondary-400;
       padding: gutter();
     }
   }
-  //margin-top: 0px;
-  //height: 80vh;
-  //background: rgba(113, 218, 210, 0.8);
+
 }
 /*  ------------------------------------------
     Sidebar
@@ -376,7 +374,6 @@ $colHover       : $color-secondary-400;
 .sidebar {
   background-color: $color-primary-100;
   color: $color-gray-100-lighter;
-  //border: 1px solid $color-primary-700;
   padding: gutter();
   .seperator{
     background-color: $color-primary-500;
@@ -384,9 +381,9 @@ $colHover       : $color-secondary-400;
     h2 { text-shadow: 1px 2px 2px $color-gray-700-dark;}
   }
   
-  // .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
+  // .. Tablet Layout Pattern 2 
   @include susy-media($tablet-a $tablet-b) {
-    @include span(1 of 4 last);
+    @include span(4 of 12 last);
   }
   // .. Desktop Layout Pattern
   @include susy-media(min-width $desktop-a) {
