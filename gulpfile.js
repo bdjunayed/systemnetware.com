@@ -37,7 +37,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass', 'scripts', 'jekyll-build'], function() {
     console.log('Entering browser-sync task')
     browserSync.init({
         server: {
@@ -74,6 +74,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass']);
+    gulp.watch('./_js/social-buttons.js', ['scripts']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*.html', '_posts/*.html'], ['jekyll-rebuild']);
 });
 
@@ -89,8 +90,11 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 // not enabled in task section
 gulp.task('scripts', function() {
-  gulp.src('_js/*.js')
-  .pipe(concat('all.min.js'))
-  .pipe(uglify())
-  .pipe(gulp.dest('._site/assets/js/'));
+    console.log("I am here...");
+  gulp.src('./_js/social-buttons.js')
+  //.pipe(concat('all.min.js'))
+  //.pipe(uglify())
+  //.pipe(browserSync.reload({stream:true}))
+  .pipe(gulp.dest('./_site/assets/js/'));
+  console.log("I am here...");
 });
