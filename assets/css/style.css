@@ -467,18 +467,18 @@ ul, li {
 .carousel-inner .item {
   padding: 1px 0px;
   color: #fff;
-  height: 100px; }
+  height: 180px; }
   .carousel-inner .item h3 {
-    font-size: 12px;
+    font-size: 16px;
     text-shadow: 1px 2px 2px #212121;
     margin: 0px 0px 5px 0px; }
     .carousel-inner .item h3 span {
       color: #3F51B5; }
   .carousel-inner .item h2 {
-    font-size: 12px;
+    font-size: 18px;
     text-shadow: 1px 2px 2px #212121;
     border: 1px solid #fff;
-    margin: 0px 0px -20px 0px;
+    margin: 0px 0px 20px 0px;
     padding: 5px; }
   @media (min-width: 27em) and (max-width: 48em) {
     .carousel-inner .item {
@@ -515,6 +515,33 @@ ul, li {
         max-width: 670px;
         margin: 20px 0px 80px 0px;
         padding: 5px; } }
+
+.carousel-inner #slide1 {
+  background: url("../images/technology-785742_200.jpg") top center no-repeat; }
+  @media (min-width: 27em) and (max-width: 48em) {
+    .carousel-inner #slide1 {
+      background: url("../images/technology-785742_250.jpg") top center no-repeat; } }
+  @media (min-width: 48em) {
+    .carousel-inner #slide1 {
+      background: url("../images/technology-785742_350.jpg") top center no-repeat; } }
+
+.carousel-inner #slide2 {
+  background: url("../images/autos-214033_200.jpg") top center no-repeat; }
+  @media (min-width: 27em) and (max-width: 48em) {
+    .carousel-inner #slide2 {
+      background: url("../images/autos-214033_250.jpg") top center no-repeat; } }
+  @media (min-width: 48em) {
+    .carousel-inner #slide2 {
+      background: url("../images/autos-214033_350.jpg") top center no-repeat; } }
+
+.carousel-inner #slide3 {
+  background: url("../images/electronics-1851218_200.jpg") top center no-repeat; }
+  @media (min-width: 27em) and (max-width: 48em) {
+    .carousel-inner #slide3 {
+      background: url("../images/electronics-1851218_250.jpg") top center no-repeat; } }
+  @media (min-width: 48em) {
+    .carousel-inner #slide3 {
+      background: url("../images/electronics-1851218_350.jpg") top center no-repeat; } }
 
 .carousel-indicators {
   bottom: -10px; }

@@ -103,7 +103,8 @@ $color-gray-50-lightest: #FAFAFA;
 /*  ------------------------------------------
     Breakpoints
     ------------------------------------------  */
-// .. Tablet Layout Pattern 20em=320px (old iPhone) 48em=768px(iPad)  
+// iPhone 6s plus 414px=25.9em         
+// .. Tablet Layout Pattern (20em=320px) (old iPhone)26em=414px 48em=768px(iPad)  
 $tablet-a: 27em;
 $tablet-b: 48em;
 // .. Desktop Layout Pattern
@@ -186,7 +187,7 @@ $colHover       : $color-secondary-400;
     Carousel
     ------------------------------------------  */
 #myCarousel { 
-  //background: url(../../assets/images/technology-785742_640.jpg);  
+  //background: url(../../assets/images/technology-785742_640.jpg)  top center no-repeat;  
   //width: 100%;
   margin-top: 70px;
 }
@@ -195,11 +196,12 @@ $colHover       : $color-secondary-400;
   .item {
     padding: 1px 0px;
     color: #fff;
-    height: 100px;
+    height: 180px;
     //vertical-align: middle;
     //background: top center;
+
     h3 {
-      font-size: 12px;
+      font-size: 16px;
       text-shadow: 1px 2px 2px $color-gray-900-darker;
       margin: 0px 0px 5px 0px;
       span {
@@ -207,11 +209,11 @@ $colHover       : $color-secondary-400;
       } 
     }
     h2 {
-      font-size: 12px;
+      font-size: 18px;
       text-shadow: 1px 2px 2px $color-gray-900-darker;
       border: 1px solid #fff;
       //max-width: 670px;
-      margin: 0px 0px -20px 0px;
+      margin: 0px 0px 20px 0px;
       padding: 5px;
     }
 
@@ -261,6 +263,27 @@ $colHover       : $color-secondary-400;
         padding: 5px;
       }
     }
+  }
+  #slide1 {
+    background: url('../images/technology-785742_200.jpg') top center no-repeat;
+    @include susy-media($tablet-a $tablet-b) {
+      background: url('../images/technology-785742_250.jpg') top center no-repeat; }
+    @include susy-media(min-width $desktop-a) {
+      background: url('../images/technology-785742_350.jpg') top center no-repeat; }
+  }
+  #slide2 {
+    background: url('../images/autos-214033_200.jpg') top center no-repeat;
+    @include susy-media($tablet-a $tablet-b) {
+      background: url('../images/autos-214033_250.jpg') top center no-repeat; }
+    @include susy-media(min-width $desktop-a) {
+      background: url('../images/autos-214033_350.jpg') top center no-repeat; }
+  }
+  #slide3 {
+    background: url('../images/electronics-1851218_200.jpg') top center no-repeat;
+    @include susy-media($tablet-a $tablet-b) {
+      background: url('../images/electronics-1851218_250.jpg') top center no-repeat; }
+    @include susy-media(min-width $desktop-a) {
+      background: url('../images/electronics-1851218_350.jpg') top center no-repeat; }
   }
 }
 
