@@ -90,11 +90,11 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 // not enabled in task section
 gulp.task('scripts', function() {
-    console.log("I am here...");
+    console.log("::scripts IN");
   gulp.src('./_js/social-buttons.js')
   //.pipe(concat('all.min.js'))
   //.pipe(uglify())
   //.pipe(browserSync.reload({stream:true}))
   .pipe(gulp.dest('./_site/assets/js/'));
-  console.log("I am here...");
+  console.log("::scripts OUT");
 });

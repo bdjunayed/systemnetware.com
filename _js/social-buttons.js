@@ -6,7 +6,7 @@ You can find it here: http://codepen.io/chrisgrabinski/pen/dDbFt
 
 ********************************/
 
-/*******************************
+/*******ss***dd************
 
 THERE IS A MUCH CLEANER JS-PEN
 With it you can add social media icons without having to update your javascript
