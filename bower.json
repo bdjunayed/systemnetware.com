@@ -1,6 +1,6 @@
 {
   "name": "system-netware",
-  "description": "This the first line.",
+  "description": "ok",
   "main": "index.html",
   "authors": [
     "M J Chowdhury"
@@ -10,7 +10,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    // "bower_components",
+    "bower_components",
     "test",
     "tests"
   ],
@@ -18,5 +18,8 @@
     "bootstrap-sass": "^3.3.7",
     "normalize-scss": "^3.0.3",
     "susy": "^2.2.12"
-  }
+  },
+  "keywords": [
+    "sd"
+  ]
 }
