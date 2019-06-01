@@ -36,12 +36,22 @@
                     <h2>Contact Us</h2>
                     <div class="input_name">
                         <input name="name" type="text" placeholder="Name">
+                        @error('name')
+                            <div class="alert error">{{ $message }}</div>
+                        @enderror
+
                     </div>
                     <div class="input_email">
                         <input name="email" type="email" placeholder="Your Email">
+                        @error('email')
+                            <div class="alert error">{{ $message }}</div>
+                        @enderror                        
                     </div>
                     <div class="input_textarea">
                         <textarea name="message" id="" cols="50" rows="5" placeholder="Message"></textarea>
+                        @error('message')
+                            <div class="alert error">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="input_button">
                         <button type="submit">Send</button>
