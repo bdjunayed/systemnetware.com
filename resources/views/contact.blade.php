@@ -17,9 +17,20 @@
         
         <div class="location_map">
 
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 
             {{-- Contact form Start--}}
-            <form action="POST" action="{{ route('form.store') }}">
+            
+            <form method="post" action="{{ route('form.store') }}">
                 @csrf
                 <div class="contact_input first_services">
                     <h2>Contact Us</h2>

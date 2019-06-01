@@ -34,9 +34,13 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        //return $request;
-        //return response()->json('Form is success!');
-        
+        $validateData = $request->validate([
+            'name' => 'required|max:40',
+            'email' => 'max:40',
+            'message' => 'max:1024'
+        ]);
+        return response()->json('Form is success!');
+        //return true;
     }
 
     /**
