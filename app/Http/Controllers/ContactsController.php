@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Contact;
 
 class ContactsController extends Controller
 {
@@ -39,8 +40,15 @@ class ContactsController extends Controller
             'email' => 'max:40',
             'message' => 'max:1024'
         ]);
-        return response()->json('Form is success!');
+        Contact::forceCreate([
+            'name' => request('name'),
+            'email' => request('email'),
+            'message' => request('message'),
+            'ip' => \Request::ip()
+        ]);
+        //return response()->json('Form is success!');
         //return true;
+        return ['message' => 'Message submitted!'];
     }
 
     /**
