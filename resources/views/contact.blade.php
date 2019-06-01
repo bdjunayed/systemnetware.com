@@ -13,22 +13,31 @@
                 <li><a href="#" title="Webmail">Webmail</a></li>
             </ul>
         </div>
+
+        
         <div class="location_map">
-            <div class="contact_input first_services">
-                <h2>Contact Us</h2>
-                <div class="input_name">
-                        <input type="text" placeholder="Name">
-                </div>
-                <div class="input_email">
-                        <input type="email" placeholder="Your Email">
-                </div>
-                <div class="input_textarea">
-                        <textarea name="" id="" cols="50" rows="5" placeholder="Message"></textarea>
-                </div>
-                <div class="input_button">
+
+
+            {{-- Contact form Start--}}
+            <form action="POST" action="/contacts">
+                <div class="contact_input first_services">
+                    <h2>Contact Us</h2>
+                    <div class="input_name">
+                        <input name="name" type="text" placeholder="Name">
+                    </div>
+                    <div class="input_email">
+                        <input name="email" type="email" placeholder="Your Email">
+                    </div>
+                    <div class="input_textarea">
+                        <textarea name="message" id="" cols="50" rows="5" placeholder="Message"></textarea>
+                    </div>
+                    <div class="input_button">
                         <button>Send</button>
-                </div>
-            </div>
+                    </div>
+                </div> {{-- Contacts form end --}}
+            </form>
+
+
             <div class="office_location">
                 <h1>Office Location</h1>
                 <p>System Netware<br> SN Bhaban, Lavel 4, 174 Tejkunipara  <br>Tejgaon Dhaka<br> 9146437, 8120858</p>
