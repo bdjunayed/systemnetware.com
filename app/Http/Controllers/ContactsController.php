@@ -34,7 +34,9 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        return "thankyou";
+        //return $request;
+        //return response()->json('Form is success!');
+        
     }
 
     /**

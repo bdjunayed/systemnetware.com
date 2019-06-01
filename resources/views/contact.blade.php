@@ -19,7 +19,8 @@
 
 
             {{-- Contact form Start--}}
-            <form action="POST" action="/contacts">
+            <form action="POST" action="{{ route('form.store') }}">
+                @csrf
                 <div class="contact_input first_services">
                     <h2>Contact Us</h2>
                     <div class="input_name">
@@ -32,7 +33,7 @@
                         <textarea name="message" id="" cols="50" rows="5" placeholder="Message"></textarea>
                     </div>
                     <div class="input_button">
-                        <button>Send</button>
+                        <button type="submit">Send</button>
                     </div>
                 </div> {{-- Contacts form end --}}
             </form>
