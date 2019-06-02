@@ -59,7 +59,7 @@
                     @enderror
                 </div>
                 <div class="input_button">
-                    <button type="submit">Send</button>
+                    <button type="submit" :disabled="form.errors.any()">Send</button>
                 </div>
             </div> {{-- Contacts form end --}}
         </form>
