@@ -27,7 +27,7 @@
     input, textarea {
         width: 100%;
         padding: 10px;
-        margin-bottom: 10px;
+        margin-top: 10px;
         border: 1px solid $primary-color;
         border-radius: 2px;
      } 
@@ -61,7 +61,9 @@
 }
 
 
-
+.input_button {
+    margin-top: 10px;
+}
 
 
 

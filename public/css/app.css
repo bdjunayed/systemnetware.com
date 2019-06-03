@@ -1141,7 +1141,7 @@ pre code {
 .contact_input input, .contact_input textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   border: 1px solid #d8a724;
   border-radius: 2px;
 }
@@ -1170,6 +1170,10 @@ pre code {
     width: 49.1525423729%;
     float: right;
   }
+}
+
+.input_button {
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1673,4 +1677,9 @@ header {
 .footer .footer_right ul li a {
   color: #9e9e9e;
   font-size: 1.2em;
+}
+
+.error {
+  font-size: 12px;
+  color: #DC322F;
 }

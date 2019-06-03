@@ -322,4 +322,12 @@ header {
 }
 
 
-
+.error {
+  font-size: 12px;
+  color: $error-text;
+  // background: $light;
+  // box-sizing: border-box;
+  // display: block;
+  // font-size: 0.9em;
+  // padding: 3px 6px 6px;
+}

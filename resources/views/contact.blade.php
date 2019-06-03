@@ -38,15 +38,15 @@
                 <h2>Contact Us</h2>
                 <div class="input_name">
                     <input name="name" v-model="form.name" type="text" placeholder="Name">
-                    <span v-if="form.errors.has('name')" v-text="form.errors.get('name')" class="alert error"></span>
+                    <span v-if="form.errors.has('name')" v-text="form.errors.get('name')" class="msg error"></span>
                 </div>
                 <div class="input_email">
                     <input name="email" v-model="form.email" type="email" placeholder="Your Email">
-                    <span v-if="form.errors.has('email')" v-text="form.errors.get('email')" class="alert error"></span>
+                    <span v-if="form.errors.has('email')" v-text="form.errors.get('email')" class="msg error"></span>
                 </div>
                 <div class="input_textarea">
                     <textarea name="message" v-model="form.message" cols="50" rows="5" placeholder="Message"></textarea>
-                    <span v-if="form.errors.has('message')" v-text="form.errors.get('message')" class="alert error"></span>
+                    <span v-if="form.errors.has('message')" v-text="form.errors.get('message')" class="msg error"></span>
                 </div>
                 <div class="input_button">
                     <button type="submit" :disabled="form.errors.any()">Send</button>
