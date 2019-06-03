@@ -36,9 +36,9 @@ class ContactsController extends Controller
     public function store(Request $request)
     {
         $validateData = $request->validate([
-            'name' => 'required|max:40',
-            'email' => 'max:40',
-            'message' => 'max:1024'
+            'name' => 'required|min:3|max:40',
+            'email' => 'min:7:max:40',
+            'message' => 'min:3|max:1024'
         ]);
         Contact::forceCreate([
             'name' => request('name'),
