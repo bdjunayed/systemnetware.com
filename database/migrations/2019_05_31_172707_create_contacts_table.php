@@ -17,7 +17,7 @@ class CreateContactsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name', 40);
             $table->string('email', 40);
-            $table->text('message');
+            $table->text('message')->nullable();
             $table->boolean('newsletter')->default(false);
             $table->string('ip', 20);
             $table->timestamps();

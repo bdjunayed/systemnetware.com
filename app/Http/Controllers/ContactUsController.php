@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Contact;
+use App\Mail\SendEmailContactUs;
+use Illuminate\Support\Facades\Mail;
 
 class ContactUsController extends Controller
 {
@@ -38,19 +40,29 @@ class ContactUsController extends Controller
         $validateData = $request->validate([
             'name' => 'required|min:3|max:40',
             'email' => 'min:7|max:40',
-            'message' => 'min:3|max:1024',
+            'message' => 'max:1024',
             'newsletter' => 'boolean'
         ]);
-        Contact::forceCreate([
+
+        $data = array(
             'name' => request('name'),
             'email' => request('email'),
             'message' => request('message'),
             'newsletter' => request('newsletter'),
             'ip' => \Request::ip()
-        ]);
+        );
+        // Store in Database
+        Contact::forceCreate($data);
         //return response()->json('Form is success!');
         //return true;
-        return response()->json(['message' => 'Message submitted!']);
+
+        // Send email
+
+        Mail::to('bdjuanayed@gmail.com')->send(new SendEmailContactUs($data));
+
+
+
+        return response()->json(['message' => 'Thanks for contacting us!']);
     }
 
     /**

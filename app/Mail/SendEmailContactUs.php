@@ -10,16 +10,16 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class SendEmailContactUs extends Mailable
 {
     use Queueable, SerializesModels;
-    public $emailData;
+    public $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($emailData)
+    public function __construct($data)
     {
-        $this->$emailData = $emailData;
+        $this->data = $data;
     }
 
     /**
@@ -29,6 +29,6 @@ class SendEmailContactUs extends Mailable
      */
     public function build()
     {
-        return $this->view('send_email_contact_form_template');
+        return $this->view('layouts.send_email_template_contact_form');
     }
 }
