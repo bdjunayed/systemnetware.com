@@ -31,8 +31,8 @@
             </div>
         @endif
 
-        {{-- Contact form Start--}}            
-        <form method="post" action="{{ route('form.store') }}" @submit.prevent="onSubmit"  @keydown="form.errors.clear($event.target.name)">
+        <!-- Contact form Start-->
+        <form method="post" action="{{ route('contactUsForm.store') }}" @submit.prevent="onSubmit"  @keydown="form.errors.clear($event.target.name)">
             @csrf
             <div class="contact_input first_services">
                 <h2>Contact Us</h2>
@@ -48,13 +48,16 @@
                     <textarea name="message" v-model="form.message" cols="50" rows="5" placeholder="Message"></textarea>
                     <span v-if="form.errors.has('message')" v-text="form.errors.get('message')" class="msg error"></span>
                 </div>
+                <div class="input_newsletter">
+                    <input name="newsletter" v-model="form.newsletter" type="checkbox">
+                    <label for="newsletter">Newsletter</label>
+                </div>                
                 <div class="input_button">
                     <button type="submit" :disabled="form.errors.any()">Send</button>
                 </div>
-            </div> {{-- Contacts form end --}}
+            </div> <!-- Contacts form end -->
         </form>
-
-    </div><!-- contact_form -->
+    </div> <!-- contact_form -->
     
     <div class="office_location">
         <h1>Office Location</h1>

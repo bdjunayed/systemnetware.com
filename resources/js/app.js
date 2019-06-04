@@ -39,7 +39,8 @@ const app = new Vue({
         form: new Form({
             name: '',
             email: '',
-            message: ''
+            message: '',
+            newsletter: true,
         })
     },
     methods: {

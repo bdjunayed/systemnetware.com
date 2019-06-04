@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Contact;
 
-class ContactsController extends Controller
+class ContactUsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -37,18 +37,20 @@ class ContactsController extends Controller
     {
         $validateData = $request->validate([
             'name' => 'required|min:3|max:40',
-            'email' => 'min:7:max:40',
-            'message' => 'min:3|max:1024'
+            'email' => 'min:7|max:40',
+            'message' => 'min:3|max:1024',
+            'newsletter' => 'boolean'
         ]);
         Contact::forceCreate([
             'name' => request('name'),
             'email' => request('email'),
             'message' => request('message'),
+            'newsletter' => request('newsletter'),
             'ip' => \Request::ip()
         ]);
         //return response()->json('Form is success!');
         //return true;
-        return ['message' => 'Message submitted!'];
+        return response()->json(['message' => 'Message submitted!']);
     }
 
     /**

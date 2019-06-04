@@ -18,6 +18,7 @@ class CreateContactsTable extends Migration
             $table->string('name', 40);
             $table->string('email', 40);
             $table->text('message');
+            $table->boolean('newsletter')->default(false);
             $table->string('ip', 20);
             $table->timestamps();
         });

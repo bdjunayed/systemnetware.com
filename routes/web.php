@@ -31,4 +31,4 @@ Route::get('/contact', function () {
 });
 
 //Contacts form
-Route::post('/contacts', 'ContactsController@store')->name('form.store');
+Route::post('/contacts', 'ContactUsController@store')->name('contactUsForm.store');

@@ -26521,7 +26521,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     form: new _core_Form__WEBPACK_IMPORTED_MODULE_2__["default"]({
       name: '',
       email: '',
-      message: ''
+      message: '',
+      newsletter: true
     })
   },
   methods: {
