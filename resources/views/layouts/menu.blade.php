@@ -1,8 +1,4 @@
-<body>
-        {{-- Home Page Background Images --}}
-         <div class="body_background">
-        
-        
+
         {{-- === Header === --}}
           <header>
               <div class="full_body">

@@ -2,6 +2,7 @@
 
 @section('content')
 {{-- CONTACT --}}
+
 <div class="contact">
 <div class="full_body">
 
@@ -15,11 +16,12 @@
     </ul>
 </div>
 
-
 <div class="location_map">
 
     <div class="contact_form" id="contactForm">
 
+        <example-component></example-component>
+        <notifications group="foo" :classes="notificationClasses"/>
         {{-- Error messages  php not worked due to js applied--}}
         {{--  @if ($errors->any())
             <div class="alert alert-danger">
@@ -36,7 +38,7 @@
         @endif  --}}
 
         
-        <span v-text="response" class="msg error"></span>
+        {{--  <span v-text="response" class="msg help"></span>  --}}
 
         <!-- Contact form Start-->
         <form method="post" action="{{ route('contactUsForm.store') }}" @submit.prevent="onSubmit"  @keydown="form.errors.clear($event.target.name)">
@@ -71,6 +73,7 @@
                 </div>
             </div> <!-- Contacts form end -->
         </form>
+        <h1>hi</h1>
     </div> <!-- contact_form -->
     
     <div class="office_location">

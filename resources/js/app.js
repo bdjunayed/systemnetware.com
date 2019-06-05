@@ -29,13 +29,26 @@ window.Vue = require('vue');
 import Vue from 'vue';
 import axios from 'axios';
 import Form from './core/Form';
+import Notifications from 'vue-notification';
 
 window.axios = axios;
 window.Form = Form;
 
+Vue.use(Notifications);
+
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
+// New laravel changes!
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default); 
+
+
+// Switching to EcmaScript imports is the recommended option:
+import ExampleComponent from './components/ExampleComponent.vue';
+Vue.component('example-component', ExampleComponent);
+
 const app = new Vue({
     el: '#contactForm',
     data: {
+        notificationClasses: null, 
         form: new Form({
             name: '',
             email: '',
@@ -49,9 +62,25 @@ const app = new Vue({
         onSubmit() {
             this.isLoading = true;
             this.form.post('/contacts')
-                .then(response => (this.response = 'Thank you for contacting us!'))
+                .then(response => (
+                    this.response = 'Thank you for contacting us!',
+
+                    this.notificationClasses = 'vue-notification success',
+                    this.$notify({
+                        group: 'foo',
+                        title: 'Important message',
+                        text: 'Hello user! This is a notification!'
+                      })
+                ))
                 .catch((err) => {
-                    console.log('Error!');                    
+                    console.log('Error!');
+
+                    this.notificationClasses = 'vue-notification error';
+                    this.$notify({
+                        group: 'foo',
+                        title: 'Important message',
+                        text: 'Hello user! This is a notification!'
+                      });
                 })
                 .finally(() => (this.isLoading = false));
         }
