@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Contact;
+use Illuminate\Http\Request;
 use App\Mail\SendEmailContactUs;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Session;
 
 class ContactUsController extends Controller
 {
@@ -58,11 +59,20 @@ class ContactUsController extends Controller
 
         // Send email
 
-        Mail::to('bdjuanayed@gmail.com')->send(new SendEmailContactUs($data));
+        Mail::to('dedb6f04e6-52a6d1@inbox.mailtrap.io')->send(new SendEmailContactUs($data));
+
+        
 
 
+        Session::flash("success");
+        
+        // for api response
+        // return response()->json(['message' => 'Thanks for contacting us!']);
 
-        return response()->json(['message' => 'Thanks for contacting us!']);
+        //or 
+
+        // return back()->with('success', 'Thanks for contacting us!');
+        return back();
     }
 
     /**

@@ -21,7 +21,7 @@
     <div class="contact_form" id="contactForm">
 
         {{-- Error messages  php not worked due to js applied--}}
-        @if ($errors->any())
+        {{--  @if ($errors->any())
             <div class="alert alert-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
@@ -29,11 +29,22 @@
                     @endforeach
                 </ul>
             </div>
-        @endif
+        @endif  --}}
+
+        {{--  @if ($success = Session::get('success'))
+            <h1>{{ $success }}</h1>
+        @endif  --}}
+
+        
 
         <!-- Contact form Start-->
         <form method="post" action="{{ route('contactUsForm.store') }}" @submit.prevent="onSubmit"  @keydown="form.errors.clear($event.target.name)">
             @csrf
+            
+            @if (Session::has("success"))
+            <h1>success</h1>
+        @endif
+        
             <div class="contact_input first_services">
                 <h2>Contact Us</h2>
                 <div class="input_name">
