@@ -36,15 +36,17 @@
         @endif  --}}
 
         
+        <span v-text="response" class="msg error"></span>
 
         <!-- Contact form Start-->
         <form method="post" action="{{ route('contactUsForm.store') }}" @submit.prevent="onSubmit"  @keydown="form.errors.clear($event.target.name)">
             @csrf
             
-            @if (Session::has("success"))
-            <h1>success</h1>
-        @endif
-        
+            {{--  need to work  --}}
+            {{--  @if (Session::has("success"))
+                <h1>Success!</h1>
+            @endif  --}}
+
             <div class="contact_input first_services">
                 <h2>Contact Us</h2>
                 <div class="input_name">
@@ -64,7 +66,8 @@
                     <label for="newsletter">Newsletter</label>
                 </div>                
                 <div class="input_button">
-                    <button type="submit" :disabled="form.errors.any()">Send</button>
+                    <button type="submit" :disabled="form.errors.any() || isLoading">Send</button>
+                    <span v-if="isLoading" class="msg help">Working...</span>
                 </div>
             </div> <!-- Contacts form end -->
         </form>

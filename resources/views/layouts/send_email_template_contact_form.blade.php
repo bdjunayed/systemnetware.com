@@ -6,6 +6,6 @@
         <p>I have some query like, {{ $data['message'] }}.</p>
         {{ $data['email'] }}
         <p>It would be appriciative, if you gone through this feedback.</p>
-
+        <p>This email generate from {{ $data['ip'] }} address.</p>
     </body>
 </html>

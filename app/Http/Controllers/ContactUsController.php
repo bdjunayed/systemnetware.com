@@ -63,16 +63,16 @@ class ContactUsController extends Controller
 
         
 
-
-        Session::flash("success");
+        // For php coding
+        // Session::flash("success");
         
-        // for api response
-        // return response()->json(['message' => 'Thanks for contacting us!']);
+        // for api / js response
+        return response()->json(['message' => 'Thanks for contacting us!']);
 
         //or 
 
         // return back()->with('success', 'Thanks for contacting us!');
-        return back();
+        // return back();
     }
 
     /**

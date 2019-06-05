@@ -40,14 +40,20 @@ const app = new Vue({
             name: '',
             email: '',
             message: '',
-            newsletter: true,
-        })
+            newsletter: true
+        }),
+        response: '',
+        isLoading: false,
     },
     methods: {
         onSubmit() {
+            this.isLoading = true;
             this.form.post('/contacts')
-                .then(response => alert('Thank you! Your message has been stored!'))
-                .catch((err) => console.log('err'));
+                .then(response => (this.response = 'Thank you for contacting us!'))
+                .catch((err) => {
+                    console.log('Error!');                    
+                })
+                .finally(() => (this.isLoading = false));
         }
     }
 });

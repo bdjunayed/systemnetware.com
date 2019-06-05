@@ -4,3 +4,25 @@
     background-color: $success-text;
   }
 }
+
+
+.msg{
+  font-size: 12px;
+  color: brown;
+  .error{
+    .inline {
+      background: $light;
+      box-sizing: border-box;
+      color: $error-text;
+      display: block;
+      font-size: 0.9em;
+      padding: 3px 6px 6px;
+    }
+  }
+  .help {
+    color: $notify-text;
+  }
+}
+
+
+.correction  {   border-radius: 1px;outline: 1px solid $error-text;}

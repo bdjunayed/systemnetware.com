@@ -26523,14 +26523,21 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       email: '',
       message: '',
       newsletter: true
-    })
+    }),
+    response: '',
+    isLoading: false
   },
   methods: {
     onSubmit: function onSubmit() {
+      var _this = this;
+
+      this.isLoading = true;
       this.form.post('/contacts').then(function (response) {
-        return alert('Thank you! Your message has been stored!');
+        return _this.response = 'Thank you for contacting us!';
       })["catch"](function (err) {
-        return console.log('err');
+        console.log('Error!');
+      })["finally"](function () {
+        return _this.isLoading = false;
       });
     }
   }
@@ -26758,6 +26765,7 @@ function () {
         this[field] = '';
       }
 
+      this.newsletter = true;
       this.errors.clear();
     }
     /**

@@ -526,27 +526,6 @@ input[type=button].btn-block {
   border: 1px solid #656d78;
   margin: 2px 0;
 }
-.member .msg {
-  font-size: 12px;
-  color: brown;
-}
-.member .msg .error .inline {
-  background: #dedede;
-  box-sizing: border-box;
-  color: #DC322F;
-  display: block;
-  font-size: 0.9em;
-  padding: 3px 6px 6px;
-}
-.member .msg .help {
-  color: #586E75;
-}
-
-.correction {
-  border-radius: 1px;
-  outline: 1px solid #DC322F;
-}
-
 /* ==========================================================================
     Navbar
 
@@ -819,6 +798,27 @@ dropdown
 }
 .notification .success {
   background-color: #2ECC40;
+}
+
+.msg {
+  font-size: 12px;
+  color: brown;
+}
+.msg .error .inline {
+  background: #dedede;
+  box-sizing: border-box;
+  color: #DC322F;
+  display: block;
+  font-size: 0.9em;
+  padding: 3px 6px 6px;
+}
+.msg .help {
+  color: #586E75;
+}
+
+.correction {
+  border-radius: 1px;
+  outline: 1px solid #DC322F;
 }
 
 /*
