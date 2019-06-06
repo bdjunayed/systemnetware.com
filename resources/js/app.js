@@ -45,6 +45,7 @@ window.Form = Form;
 // import ExampleComponent from './components/ExampleComponent.vue';
 // Vue.component('example-component', ExampleComponent);
 
+
 const app = new Vue({
     el: '#contactForm',
     data: {
@@ -57,6 +58,8 @@ const app = new Vue({
         }),
         response: '',
         isLoading: false,
+        showNofity: false,
+
     },
     methods: {
         onSubmit() {
@@ -64,25 +67,18 @@ const app = new Vue({
             this.form.post('/contacts')
                 .then(response => (
                     this.response = 'Thank you for contacting us!',
-
-                    this.notificationClasses = 'vue-notification success',
-                    this.$notify({
-                        group: 'foo',
-                        title: 'Important message',
-                        text: 'Hello user! This is a notification!'
-                      })
-                ))
+                    this.nofity()
+                    ))
                 .catch((err) => {
                     console.log('Error!');
-
-                    this.notificationClasses = 'vue-notification error';
-                    this.$notify({
-                        group: 'foo',
-                        title: 'Important message',
-                        text: 'Hello user! This is a notification!'
-                      });
+                    //this.nofity();
                 })
                 .finally(() => (this.isLoading = false));
+        },
+        nofity() {
+            this.showNofity = true;
+            setTimeout(() => this.showNofity = false, 3000);
+
         }
     }
 });

@@ -9390,7 +9390,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       newsletter: true
     }),
     response: '',
-    isLoading: false
+    isLoading: false,
+    showNofity: false
   },
   methods: {
     onSubmit: function onSubmit() {
@@ -9398,23 +9399,20 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 
       this.isLoading = true;
       this.form.post('/contacts').then(function (response) {
-        return _this.response = 'Thank you for contacting us!', _this.notificationClasses = 'vue-notification success', _this.$notify({
-          group: 'foo',
-          title: 'Important message',
-          text: 'Hello user! This is a notification!'
-        });
+        return _this.response = 'Thank you for contacting us!', _this.nofity();
       })["catch"](function (err) {
-        console.log('Error!');
-        _this.notificationClasses = 'vue-notification error';
-
-        _this.$notify({
-          group: 'foo',
-          title: 'Important message',
-          text: 'Hello user! This is a notification!'
-        });
+        console.log('Error!'); //this.nofity();
       })["finally"](function () {
         return _this.isLoading = false;
       });
+    },
+    nofity: function nofity() {
+      var _this2 = this;
+
+      this.showNofity = true;
+      setTimeout(function () {
+        return _this2.showNofity = false;
+      }, 3000);
     }
   }
 });

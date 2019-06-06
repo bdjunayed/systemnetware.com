@@ -20,8 +20,10 @@
 
     <div class="contact_form" id="contactForm">
 
-        <example-component></example-component>
-        <notifications group="foo" :classes="notificationClasses"/>
+        {{--  <example-component></example-component>  --}}
+        <div v-if="showNofity" class="notification success">
+            @{{ response }}
+        </div>
         {{-- Error messages  php not worked due to js applied--}}
         {{--  @if ($errors->any())
             <div class="alert alert-danger">
@@ -73,7 +75,6 @@
                 </div>
             </div> <!-- Contacts form end -->
         </form>
-        <h1>hi</h1>
     </div> <!-- contact_form -->
     
     <div class="office_location">

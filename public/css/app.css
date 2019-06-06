@@ -793,13 +793,6 @@ dropdown
   display: block;
 }
 
-.notification {
-  border: 2px solid #3b4042;
-}
-.notification .success {
-  background-color: #2ECC40;
-}
-
 .msg {
   font-size: 12px;
   color: brown;
@@ -821,23 +814,27 @@ dropdown
   outline: 1px solid #DC322F;
 }
 
-.vue-notification {
+.notification {
+  position: absolute;
+  top: 2vh;
+  right: 0px;
   padding: 10px;
   margin: 0 5px 5px;
   font-size: 12px;
   color: #ffffff;
   background: #44A4FC;
   border-left: 5px solid #187FE7;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 18px rgba(0, 0, 0, 0.15);
 }
-.vue-notification.warn {
+.notification.warn {
   background: #ffb648;
   border-left-color: #f48a06;
 }
-.vue-notification.error {
+.notification.error {
   background: #E54D42;
   border-left-color: #B82E24;
 }
-.vue-notification.success {
+.notification.success {
   background: #68CD86;
   border-left-color: #42A85F;
 }
@@ -1157,6 +1154,10 @@ pre code {
 }
 .quick_links ul li a {
   color: #a5a5a5;
+}
+
+.contact_form {
+  position: relative;
 }
 
 .contact_input input, .contact_input textarea {
