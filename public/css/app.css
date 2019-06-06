@@ -1194,6 +1194,10 @@ pre code {
   }
 }
 
+.input_newsletter input {
+  width: unset;
+}
+
 .input_button {
   margin-top: 10px;
 }

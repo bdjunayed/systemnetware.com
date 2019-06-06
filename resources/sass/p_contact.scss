@@ -59,12 +59,18 @@
     
 }
 .input_email {
+    
     @media only screen and (min-width: $md){
         width: span(6);
          float: right;
      }
 }
 
+.input_newsletter {
+    input {
+        width: unset;
+    }
+}
 
 .input_button {
     margin-top: 10px;
