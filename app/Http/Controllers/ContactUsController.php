@@ -59,7 +59,7 @@ class ContactUsController extends Controller
 
         // Send email
 
-        Mail::to('dedb6f04e6-52a6d1@inbox.mailtrap.io')->send(new SendEmailContactUs($data));
+        Mail::send(new SendEmailContactUs($data));
 
         
 
