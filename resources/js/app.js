@@ -29,12 +29,12 @@ window.Vue = require('vue');
 import Vue from 'vue';
 import axios from 'axios';
 import Form from './core/Form';
-import Notifications from 'vue-notification';
+// import Notifications from 'vue-notification';
 
 window.axios = axios;
 window.Form = Form;
 
-Vue.use(Notifications);
+// Vue.use(Notifications);
 
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 // New laravel changes!
@@ -42,8 +42,8 @@ Vue.use(Notifications);
 
 
 // Switching to EcmaScript imports is the recommended option:
-import ExampleComponent from './components/ExampleComponent.vue';
-Vue.component('example-component', ExampleComponent);
+// import ExampleComponent from './components/ExampleComponent.vue';
+// Vue.component('example-component', ExampleComponent);
 
 const app = new Vue({
     el: '#contactForm',
