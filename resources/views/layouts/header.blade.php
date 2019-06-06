@@ -22,7 +22,7 @@
 <div class="logo">
         <div class="full_body">
          <div class="logo_body">
-              <img src="images/sn-logo1.png" >
+              <img src="images/svg/system-logo.svg" >
            </div>
         </div>
       </div>

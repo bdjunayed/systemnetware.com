@@ -24,7 +24,7 @@
 						<p>Thus the Computer Technology in today’s world has changed the way of thinking in business task performing, data handling and works accomplishment. System Netware aims at helping the business people with the computer application and software development catering the need of individuals, companies and business firms. We believe that the change is inevitable and we must be prepared for it. The term “Efficiency” now stands for use of computer applications and software for the business task performance. We the people of System Netware Vow to bring the best of computer technology for the benefit of our client and associates. We have a group of dedicated computer professionals and an expert who easily understand the business of our client and can give solution that is viable both technically and financially. The Teamwork is the main strength of our firm and we always try to keep a high morale in our personnel and staffs to give the highest level of services to our valued clients.</p>
                </div>{{-- our_history_p --}}
                <div class="platform_button">
-                   <button href="services">Our Services</button>
+                   <a href="services"><button>Our Services</button></a>
                </div>  {{-- platform_button --}}
                </div>
            </div>{{-- our_history --}}
