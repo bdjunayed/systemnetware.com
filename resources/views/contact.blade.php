@@ -66,12 +66,12 @@
                     <span v-if="form.errors.has('message')" v-text="form.errors.get('message')" class="msg error"></span>
                 </div>
                 <div class="input_newsletter">
-                    <input name="newsletter" v-model="form.newsletter" type="checkbox">
+                    <input name="newsletter" v-model="form.newsletter" type="checkbox" id="newsletter">
                     <label for="newsletter">Newsletter</label>
                 </div>                
                 <div class="input_button">
                     <button type="submit" :disabled="form.errors.any() || isLoading">Send</button>
-                    <span v-if="isLoading" class="msg help">Working...</span>
+                    <span v-if="isLoading" class="notification warn">Working...</span>
                 </div>
             </div> <!-- Contacts form end -->
         </form>

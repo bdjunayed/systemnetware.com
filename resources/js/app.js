@@ -76,8 +76,11 @@ const app = new Vue({
                 .finally(() => (this.isLoading = false));
         },
         nofity() {
-            this.showNofity = true;
-            setTimeout(() => this.showNofity = false, 3000);
+            this.showNofity = true; 
+            setTimeout(() => {
+                this.showNofity = false;
+                this.response = '';
+            }, 3000);
 
         }
     }

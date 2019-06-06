@@ -9411,7 +9411,8 @@ var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
 
       this.showNofity = true;
       setTimeout(function () {
-        return _this2.showNofity = false;
+        _this2.showNofity = false;
+        _this2.response = '';
       }, 3000);
     }
   }
@@ -9767,3 +9768,4 @@ module.exports = __webpack_require__(/*! D:\Support\www\systemnetware2\resources
 /***/ })
 
 },[[0,"/js/manifest","/js/vendor"]]]);
+//# sourceMappingURL=app.js.map
