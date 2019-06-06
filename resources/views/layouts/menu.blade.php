@@ -1,8 +1,4 @@
-<body>
-        {{-- Home Page Background Images --}}
-         <div class="body_background">
-        
-        
+
         {{-- === Header === --}}
           <header>
               <div class="full_body">
@@ -26,7 +22,7 @@
 <div class="logo">
         <div class="full_body">
          <div class="logo_body">
-              <img src="images/sn-logo.png" >
+              <img src="images/sn-logo1.png" >
            </div>
         </div>
       </div>

@@ -23,11 +23,16 @@
         }
     }
 }
+
+.contact_form {
+    position: relative;
+}
+
 .contact_input {
     input, textarea {
         width: 100%;
         padding: 10px;
-        margin-bottom: 10px;
+        margin-top: 10px;
         border: 1px solid $primary-color;
         border-radius: 2px;
      } 
@@ -54,14 +59,22 @@
     
 }
 .input_email {
+    
     @media only screen and (min-width: $md){
         width: span(6);
          float: right;
      }
 }
 
+.input_newsletter {
+    input {
+        width: unset;
+    }
+}
 
-
+.input_button {
+    margin-top: 10px;
+}
 
 
 

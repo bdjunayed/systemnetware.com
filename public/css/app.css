@@ -526,27 +526,6 @@ input[type=button].btn-block {
   border: 1px solid #656d78;
   margin: 2px 0;
 }
-.member .msg {
-  font-size: 12px;
-  color: brown;
-}
-.member .msg .error .inline {
-  background: #dedede;
-  box-sizing: border-box;
-  color: #DC322F;
-  display: block;
-  font-size: 0.9em;
-  padding: 3px 6px 6px;
-}
-.member .msg .help {
-  color: #586E75;
-}
-
-.correction {
-  border-radius: 1px;
-  outline: 1px solid #DC322F;
-}
-
 /* ==========================================================================
     Navbar
 
@@ -814,11 +793,50 @@ dropdown
   display: block;
 }
 
-.notification {
-  border: 2px solid #3b4042;
+.msg {
+  font-size: 12px;
+  color: brown;
 }
-.notification .success {
-  background-color: #2ECC40;
+.msg .error .inline {
+  background: #dedede;
+  box-sizing: border-box;
+  color: #DC322F;
+  display: block;
+  font-size: 0.9em;
+  padding: 3px 6px 6px;
+}
+.msg .help {
+  color: #586E75;
+}
+
+.correction {
+  border-radius: 1px;
+  outline: 1px solid #DC322F;
+}
+
+.notification {
+  position: absolute;
+  top: 2vh;
+  right: 0px;
+  padding: 10px;
+  margin: 0 5px 5px;
+  font-size: 12px;
+  color: #ffffff;
+  background: #44A4FC;
+  border-left: 5px solid #187FE7;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 18px rgba(0, 0, 0, 0.15);
+}
+.notification.warn {
+  background: #ffb648;
+  border-left-color: #f48a06;
+}
+.notification.error {
+  background: #E54D42;
+  border-left-color: #B82E24;
+}
+.notification.success {
+  background: #68CD86;
+  border-left-color: #42A85F;
 }
 
 /*
@@ -1138,10 +1156,14 @@ pre code {
   color: #a5a5a5;
 }
 
+.contact_form {
+  position: relative;
+}
+
 .contact_input input, .contact_input textarea {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   border: 1px solid #d8a724;
   border-radius: 2px;
 }
@@ -1170,6 +1192,14 @@ pre code {
     width: 49.1525423729%;
     float: right;
   }
+}
+
+.input_newsletter input {
+  width: unset;
+}
+
+.input_button {
+  margin-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1674,3 +1704,9 @@ header {
   color: #9e9e9e;
   font-size: 1.2em;
 }
+
+.error {
+  font-size: 12px;
+  color: #DC322F;
+}
+/*# sourceMappingURL=app.css.map*/

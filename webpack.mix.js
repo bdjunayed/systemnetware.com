@@ -11,12 +11,23 @@ const mix = require('laravel-mix');
  |
  */
 
+// To load jQuery
+
+// mix.autoload({ 'jquery': ['window.$', 'window.jQuery'] }); 
+mix.autoload({ jquery: ['$', 'window.jQuery', 'jQuery'] });
+// mix.autoload({ jquery: ['$', 'window.jQuery'] });
+// mix.autoload({
+//     jQuery: 'jquery',
+//     $: 'jquery',
+//     jquery: 'jquery'
+// });
+
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
         .options({
             processCssUrls: false
         })
-        //.sourceMaps()
+        .sourceMaps(true, 'source-map')
         .extract(['vue', 'jquery']);//always ON, except sourcemap
 
 mix.copyDirectory('resources/images', 'public/images');
