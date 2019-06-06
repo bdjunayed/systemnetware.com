@@ -9,10 +9,10 @@
 <div class="quick_links">
     <h3>Quick Links</h3>
     <ul>
-        <li><a href="#" title="Services">Services</a></li>
-        <li><a href="#" title="Products">Products</a></li>
-        <li><a href="#" title="Login">Login</a></li>
-        <li><a href="#" title="Webmail">Webmail</a></li>
+        <li><a href="services" title="Services">Services</a></li>
+        <li><a href="products" title="Products">Products</a></li>
+        <li><a href="contact" title="Login">Login</a></li>
+        <li><a href="https://admin.google.com/accountchooser?consumerAccountUsed=true" title="Webmail">Webmail</a></li>
     </ul>
 </div>
 

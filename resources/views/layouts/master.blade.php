@@ -21,7 +21,7 @@
     <div class="body_background">
         
         
-        @include('layouts.menu')
+        @include('layouts.header')
 
 
         @yield('content')

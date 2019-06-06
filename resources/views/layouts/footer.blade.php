@@ -5,8 +5,8 @@
     </div>
     <div class="footer_right">
         <ul>
-            <li><a href="">Privacy</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="contact">Privacy</a></li>
+            <li><a href="contact">Contact</a></li>
         </ul>
     </div>
 </div>{{--full_body --}}  

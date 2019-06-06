@@ -4,16 +4,16 @@
               <div class="full_body">
                <div class="top_header">
                 <ul>
-                    <li><a href="#"><i class="fas fa-home"></i> SN Bhaban, Lavel 4, 174 Tejkunipara, Tejgaon Dhaka</a></li>
-                    <li><a href="#"><i class="fas fa-phone"></i> 9146437</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> towhid@systemnetware.com</li>
+                    <li><a href="#"><i class="fas fa-home"></i> SN Bhaban, Lavel 4, 174 Tejkunipara, Tejgaon Dhaka.</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> (02) 9146437</a></li>
+                    <li><a href="mailto:towhid@systemnetware.com"><i class="fas fa-envelope"></i> towhid@systemnetware.com</li>
                 </ul>
             </div>
             <div class="right_header">
                 <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/SystemNetware/"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.facebook.com/SystemNetware/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.facebook.com/SystemNetware/"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
              </div>{{-- full_body --}}
