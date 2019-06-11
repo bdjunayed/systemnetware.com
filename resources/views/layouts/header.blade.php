@@ -41,8 +41,7 @@
       </div>
        <div class="mobile_menu">
          <select>
-             <option selected="selected" value="">Main Navigation</option>
-             <option value="/">Home</option>
+             <option value="/" selected="selected" >Home</option>
              <option value="services">Services</option>
              <option value="products">Products</option>
              <option value="ourclients">Our Clients</option>
