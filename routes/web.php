@@ -29,3 +29,6 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+//Contacts form
+Route::post('/contacts', 'ContactUsController@store')->name('contactUsForm.store');
