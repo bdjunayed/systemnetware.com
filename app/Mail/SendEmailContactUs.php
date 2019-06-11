@@ -30,7 +30,7 @@ class SendEmailContactUs extends Mailable
     public function build()
     {
         return $this
-        ->to('dedb6f04e6-52a6d1@inbox.mailtrap.io')
+        ->to('bdjunayed@gmail.com')
         ->from($this->data['email'], $this->data['name'])->replyTo($this->data['email'], $this->data['name'])
         ->view('layouts.send_email_template_contact_form')
         ->subject('New Customer Equiry from SystemNetware.com');        
