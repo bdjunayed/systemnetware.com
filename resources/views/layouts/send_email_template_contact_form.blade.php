@@ -1,11 +1,10 @@
 <html>
     <head></head>
-    <body style="background: black; color: white">
-        <h1>{{ $data['name'] }}</h1>
-        <p>Hello, this is <strong>{{ $data['name'] }}</strong>.</p>
-        <p>I have some query like, {{ $data['message'] }}.</p>
-        {{ $data['email'] }}
+    <body style="">
+        
+        <p>Hello, this is <strong>{{ $data['name'] }}, </strong>. I have some query like, {{ $data['message'] }}.</p>        
         <p>It would be appriciative, if you gone through this feedback.</p>
-        <p>This email generate from {{ $data['ip'] }} address.</p>
+        <p>This email generates from {{ $data['ip'] }} IP address. url: Systemnetware.com</p>
+        
     </body>
 </html>
