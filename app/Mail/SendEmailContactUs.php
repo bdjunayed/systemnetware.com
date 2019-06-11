@@ -31,7 +31,7 @@ class SendEmailContactUs extends Mailable
     {
         return $this
         ->to('towhid@systemnetware.com')
-        ->bcc(['bdjunayed@gmail.com', 'test@banglatyping.com'])
+        ->cc(['bdjunayed@gmail.com', 'test@banglatyping.com'])
         ->from($this->data['email'], $this->data['name'])->replyTo($this->data['email'], $this->data['name'])
         ->view('layouts.send_email_template_contact_form')
         ->subject('New Customer Equiry from SystemNetware.com');        
