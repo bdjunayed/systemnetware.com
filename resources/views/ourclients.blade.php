@@ -150,5 +150,6 @@
         </div><!-- last_update_client_list -->
     </section>
     </div><!-- full_body -->
+    <br><br><br>
 </div>{{-- body_background --}}
     @endsection

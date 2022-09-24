@@ -25,7 +25,7 @@
                                             <th scope="row">Share Broker’s Data Processing</th>
                                             <td>
                                                 <p>This is an essential product for share broker’s daily transaction and integrated accounting. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in any SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-                                                
+
                                                 <ul class="product_table_ul">
                                                     <li>The application is all user-friendly command button driven what minimizes user training and human error.</li>
                                                     <li>The program intelligently performs all the transactions of a share broker including daily sale & buy order.</li>
@@ -42,7 +42,7 @@
                                             <th scope="row">Share Issue Data Processing</th>
                                             <td>
                                                 <p>This is an essential product for share issue data processing organization. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in any SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-                                               
+
                                                 <ul class="product_table_ul">
                                                     <li>The application is very much user-friendly and command button driven what minimizes user training and human error.</li>
                                                     <li>The program intelligently calculates all the reports  of a share issue  including allotment letters, list of invalid and valid applicants with reason, refund warrant letters, amount to be refunded</li>
@@ -59,7 +59,7 @@
                                             <th scope="row">Computerized Share Management</th>
                                             <td>
                                                 <p>This is an essential product for share  data processing for any organization interested to offer public shares. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in a SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-    
+
                                                 <ul class="product_table_ul">
                                                     <li>Share application data entry /edit</li>
                                                     <li>Consolidation and summary of application money</li>
@@ -89,7 +89,7 @@
                                             <th scope="row">Generalized Accounting System “LENDEN” ä</th>
                                             <td>
                                                 <p>This is an essential product for Computerized accounting system for any organization with large or small no of transactions day by day. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in a SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-                                                    
+
                                                 <ul class="product_table_ul">
                                                     <li>Data entry, edit facility of daily transaction and preparation of Cash Book</li>
                                                     <li>Different reports on Cash Book</li>
@@ -128,7 +128,7 @@
                                             <th scope="row">Computerized Payroll “Payperfect” ä</th>
                                             <td>
                                                 <p>This is an essential product for Computerized payroll system for any organization with large no of employees with complex paying system. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in a SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-                                                
+
                                                 <ul class="product_table_ul">
                                                      <li>Provides integrated database to store all Payroll information</li>
                                                      <li>Provides quick access to accurate and up-to-date payroll data</li>
@@ -158,7 +158,7 @@
                                             <th scope="row">Computerized Inventory “ICS” ä</th>
                                             <td>
                                                 <p>This is an essential product for Computerized inventory control system for any organization with large stores and warehouses requiring frequent monitoring of product inventory. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in a SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-                                                
+
                                                 <ul class="product_table_ul">
                                                     <li>Provides integrated database to store all store data</li>
                                                     <li>Provides quick access to accurate and up-to-date store data</li>
@@ -188,7 +188,7 @@
                                             <th scope="row">Hospital & integrated  diagnostic management system “HPM” &trade;</th>
                                             <td>
                                                 <p>This is an essential product for Computerized Clinic management system for any clinic or hospital with large no of patients and in-house medicine department requiring frequent monitoring of hospital beds and available medicine. Available in both 16 bit and 32 bit version supporting Windows 3.X, Windows 9x, Windows NT/2000/XP with. Supports multi-user system in a multitasking environment. Scalable unto client server computing needs for enterprise database needs. Has enormous flexibility in database design and user interfaces, user accessibility. It is available in a SQL or ORACLE server based system supporting SQL PASSTHROUGH Queries and stub procedures for faster operation, faster connectivity and enormous flexibility.</p>
-                                                
+
                                                 <ul class="product_table_ul">
                                                     <li>Automatic patient entries in empty beds and release system.</li>
                                                     <li>Automatic billing for patients.</li>
@@ -209,7 +209,7 @@
                                             <th scope="row">Election commission data processing system</th>
                                             <td>
                                                 <p>Voter list and voter id card preparation tools for Bangladesh EC.</p>
-                                                
+
                                                 <ul class="product_table_ul">
                                                     <li>Automatic Update Facilities</li>
                                                     <li>Jazzy Reports And User Screens.</li>
@@ -218,7 +218,7 @@
                                                     <li>Intelligent automation in data entry.</li>
                                                     <li>Macro facilities.</li>
                                                     <li>Built in security system.</li>
-                                                    
+
                                                     </ul>
                                             </td>
                                           </tr>
@@ -239,7 +239,7 @@
                                                         <li>Doctors Information’s</li>
                                                         <li>Laboratory reporting System</li>
                                                         <li>Management Information System</li>
-                                                        <li>Finance & Accounting</li>          
+                                                        <li>Finance & Accounting</li>
                                                     </ul>
                                             </td>
                                           </tr>
@@ -269,7 +269,7 @@
                                                     <li>hotel catering</li>
                                                     <li>billing</li>
                                                     <li>restaurant management</li>
-                                                    <li>club management</li>       
+                                                    <li>club management</li>
                                                 </ul>
                                             </td>
                                           </tr>
@@ -595,6 +595,7 @@
             </div><!-- container -->
         </div><!-- platform -->
     </section>
+            <br><br><br>
     </div><!-- full_body -->
 </div>{{-- body_background --}}
     @endsection

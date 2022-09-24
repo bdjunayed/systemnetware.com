@@ -24,7 +24,7 @@
                     </div><!-- col -->
                 </div><!-- row -->
             </div><!-- first_services -->
-<!-- ============= SERVICES TABLE ============ -->            
+<!-- ============= SERVICES TABLE ============ -->
             <div class="sec_services">
                     <div class="row">
                         <div class="col-md-12">
@@ -109,9 +109,10 @@
             </div><!-- third_services_body -->
         </div><!-- container -->
     </div><!-- third_services -->
-<!-- End Third Services  -->       
+<!-- End Third Services  -->
         </div><!-- container -->
     </div><!-- services -->
     </div><!-- full_body -->
+    <br><br><br>
 </div>{{-- body_background --}}
     @endsection

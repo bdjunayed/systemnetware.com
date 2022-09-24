@@ -15,7 +15,7 @@
            </div>{{-- full_body --}}
            </div>{{-- main_slider --}}
        {{-- End Main Slider --}}
-       
+
        {{-- ==== Our History ===== --}}
            <div class="our_history">
                <div class="full_body">
@@ -28,22 +28,23 @@
                </div>  {{-- platform_button --}}
                </div>
            </div>{{-- our_history --}}
-       
+
         <div class="history_block">
                <div class="full_body">
             <div class="block">
                <h1>Integrity</h1>
-               <p>System Netware always puts the highest emphasis and importance to provide clients with complete computer solutions and services. Its aim is to work towards the fulfillment of quality assurance in any projects and providing our clients with the supports to meet with the challenge of competition and obsolesce that hunt the business people out of the market.</p>    
-            </div>{{-- block --}}    
+               <p>System Netware always puts the highest emphasis and importance to provide clients with complete computer solutions and services. Its aim is to work towards the fulfillment of quality assurance in any projects and providing our clients with the supports to meet with the challenge of competition and obsolesce that hunt the business people out of the market.</p>
+            </div>{{-- block --}}
             <div class="block">
                <h1>Independence</h1>
-               <p>The professionals of System Netware maintain a close touch with the latest academic thinking and keep abreast development in computer technology for the best interest of the clients. For special case handling we keep cooperation with the Universities and Institutions specialized in computer technology.</p>    
-            </div>{{-- block --}}  
+               <p>The professionals of System Netware maintain a close touch with the latest academic thinking and keep abreast development in computer technology for the best interest of the clients. For special case handling we keep cooperation with the Universities and Institutions specialized in computer technology.</p>
+            </div>{{-- block --}}
             <div class="block">
                <h1>Innovation</h1>
-               <p>We have also the commitment to reflect the GOB objectives to attain computer literacy and export of computer software to add a new dimension to the export oriented industries and thus earning the foreign exchange to boost up the development of our country.</p>    
-            </div>{{-- block --}}  
-            </div>{{--full_body --}}  
-        </div>{{-- history_block --}}   
+               <p>We have also the commitment to reflect the GOB objectives to attain computer literacy and export of computer software to add a new dimension to the export oriented industries and thus earning the foreign exchange to boost up the development of our country.</p>
+            </div>{{-- block --}}
+            </div>{{--full_body --}}
+        </div>{{-- history_block --}}
+
 @endsection
 

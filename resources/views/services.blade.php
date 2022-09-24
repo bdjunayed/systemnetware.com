@@ -6,17 +6,17 @@
             <div class="first_services">
                 <h2>Software Development: </h2>
                 <p>Specially we develop & market the software as per our client’s requirement in Windows XP/2000/9x/ Windows NT/2000/XP & Unix platform supporting LAN & WAN in the fields of ERP for Hospitals and Garments, Accounting, Banking, Payroll, Inventory, MIS, Personal Information Management System (PIMS), Multimedia software etc. In addition, Multilingual support in English, Bengali, Arabic, Hindi etc. is also available to help our clients get easy with the use of software.</p>
-            
+
                 <h2>Networking:  </h2>
                 <p>We install and provide support and consultancy services for both LAN and WAN in Novell, Windows NT/2000/XP, Windows 9x, Windows 2000/XP and Unix platform.</p>
-            
+
                 <h2>Data Entry: </h2>
                 <p>We provide data entry and data processing services in all range of complexity, volume and time critical requirements.</p>
-            
+
                 <h2>Implementation Equipment Sales: </h2>
                 <p>All types of brand & Clone machines, Printer, Scanner, UPS, Stabilizer, Computer Accessories etc.</p>
              </div><!-- first_services -->
-<!-- ============= SERVICES TABLE ============ -->            
+<!-- ============= SERVICES TABLE ============ -->
             <div class="sec_services">
                             <h2>Generally followed software development technology</h2>
                             <table class="service_table">
@@ -90,8 +90,9 @@
                                 <p>At SYSTEM NETWARE we know that we are living in a changing world. We recognise that we participate in the world's most rapidly evolving industry. The rate of change of technology in the information industry challenges us all to learn and adapt. This type of thinking gives our clients a market advantage.</p>
             </div><!-- third_services_body -->
     </div><!-- third_services -->
-<!-- End Third Services  -->      
+<!-- End Third Services  -->
     </div><!-- services -->
     </div><!-- full_body -->
+    <br><br><br>
 </div>{{-- body_background --}}
     @endsection

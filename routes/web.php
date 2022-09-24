@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,6 +13,17 @@
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+// System netware routes
 Route::get('/', function () {
     return view('index');
 });
@@ -31,4 +44,5 @@ Route::get('/contact', function () {
 });
 
 //Contacts form
-Route::post('/contacts', 'ContactUsController@store')->name('contactUsForm.store');
+// Route::post('/contacts', 'ContactUsController@store')->name('contactUsForm.store');
+Route::post('/contacts', [App\Http\Controllers\ContactUsController::class, 'store'])->name('contactUsForm.store');

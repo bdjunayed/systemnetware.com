@@ -1,0 +1,47 @@
+.services_details {
+    h1 {
+        text-transform: uppercase;
+        font-weight: 400;
+        color: $primary-color;
+        padding-bottom: 4px;
+        border-bottom: 1px solid $primary-color;
+        font-family: $garamond;
+        font-size: 1.2rem;
+    }
+}
+.first_services {
+    padding: 0 20px;
+    h2 {
+        font-size: 1rem;
+        color: $primary-color;
+        padding: 30px 0 10px 0;
+    }
+    p:last-child {
+        padding-bottom: 30px;
+    }
+}
+
+.sec_services {
+    padding: 0 20px;
+    h2 {
+        color: $primary-color;
+        font-size: 1rem;
+    }
+}
+th {
+        text-align: left;
+    }
+thead th {
+    text-align: center;
+}
+.third_services_body {
+    padding: 20px;
+    .third_services_ul {
+        padding-left: 30px;
+        li {
+            list-style: circle;
+            line-height: 20px;
+            padding: 10px 0px;
+        }
+    }
+}

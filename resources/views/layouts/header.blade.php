@@ -1,7 +1,7 @@
 
         {{-- === Header === --}}
           <header>
-              <div class="full_body">
+              <div class="full_body container-fluid">
                <div class="top_header">
                 <ul>
                     <li><a href="#"><i class="fas fa-home"></i> SN Bhaban, Lavel 4, 174 Tejkunipara, Tejgaon Dhaka.</a></li>

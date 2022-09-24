@@ -11,7 +11,7 @@
                         <div class="first_services">
                             <h2>About SYSTEM NETWARE</h2>
                             <p>What makes one service better than its competitors? At SYSTEM NETWARE we believe that our best asset is our people. In particular, it is our operators who are exceptional people that perform and produce our clients work, day after day. </p>
-    
+
                             <p>The combination of our working environment, the manner in which our supervisors manage and communicate; our involvement with each project and its progression; the feedback from our clients (which we encourage) all helps to produce a happy environment for our staff.</p>
                         </div><!-- product_header -->
                         <div class="product_table">
@@ -81,23 +81,23 @@
                                             <th scope="row">Branch offices</th>
                                             <td>
                                                <p>Sylhet:
-    
+
                                                 Rikabi Bazar (2nd Floor)
-                                                
+
                                                 (Opposite side of M. Saifur Rahman Auditorium,)
-                                                
+
                                                 Sylhet
-                                                
+
                                                 Phone : 0171-4048246<br>
-                                                
-                                                 
-                                                
+
+
+
                                                 Chittagong:
-                                                
+
                                                 12 Jamal Khan Road,
-                                                
+
                                                 Chittagong
-                                                
+
                                                 Phone : 0171-829097</p>
                                             </td>
                                           </tr>
@@ -105,7 +105,7 @@
                                             <th scope="row">Lawer</th>
                                             <td>
                                                <p>Sheikh & Associates<br>
-    
+
                                                 Minar Bhaban, Sadarghat, CMM Court, Dhaka</p>
                                             </td>
                                           </tr>
@@ -113,11 +113,11 @@
                                             <th scope="row">Overseas Partners</th>
                                             <td>
                                                <p>Dream Fusion
-    
+
                                                 165 Dundas St. West, Suite 601
-                                                
+
                                                 Mississauga, Ontario L5B 2N6, Canada
-                                                
+
                                                 Tel : (905) 277-8044, Fax : (905) 507-2939</p>
                                             </td>
                                           </tr>
@@ -125,13 +125,13 @@
                                             <th scope="row">Major Products</th>
                                             <td>
                                                <p> HPM –a hospital ERP solution.
-    
+
                                                 ·  “LENDEN” – generalized accounting system.
-                                                
+
                                                 ·  “ICS” – generalized inventory control system
-                                                
+
                                                 ·  ”NXN-Lab Management”  - a diagnostic Lab ERP solution.
-                                                
+
                                                 ·  … and much more.</p>
                                             </td>
                                           </tr>
@@ -229,7 +229,7 @@
                             <p>We have the following office equipment and computers for study, analysis and development work:</p>
                         </div><!-- product_header -->
                         <div class="equipment_table">
-                            
+
                                 <table class="table">
                                         <thead>
                                             <tr>
@@ -376,6 +376,7 @@
             <p>Office Assistant - 2 persons</p>
         </div><!-- container -->
     </section>
+            <br><br><br>
     </div><!-- full_body -->
 </div>{{-- body_background --}}
     @endsection
